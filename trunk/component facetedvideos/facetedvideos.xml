@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>Faceted Videos</name>
+
+	<creationDate>2010-04-15</creationDate>
+	<author>Marcos Cunha</author>
+	<authorEmail>marcos21xx@gmail.com</authorEmail>
+	<authorUrl>http://www.hospedaeu.com.br</authorUrl>
+	<copyright>Copyright 2010 Marcos Cunha</copyright>
+	<license>GNU/GPL</license>
+
+	<version>1.0</version>
+
+	<description>Faceted Videos is a video repository component that uses faceted classification and search to provide access to videos.</description>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>facetedvideos.php</filename>
+		<filename>metadata.xml</filename>
+		
+		<filename>controller.php</filename>
+		<filename>controllers/index.html</filename>
+		<filename>controllers/watch.php</filename>
+		
+		<filename>views/navigation/index.html</filename>
+		<filename>views/navigation/metadata.xml</filename>
+		<filename>views/navigation/view.html.php</filename>
+		<filename>views/navigation/tmpl/index.html</filename>
+		<filename>views/navigation/tmpl/default.php</filename>
+		<filename>views/navigation/tmpl/default.css</filename>
+		<filename>views/navigation/tmpl/default.xml</filename>
+
+		<filename>views/watch/index.html</filename>
+		<filename>views/watch/metadata.xml</filename>
+		<filename>views/watch/view.html.php</filename>
+		<filename>views/watch/tmpl/index.html</filename>
+		<filename>views/watch/tmpl/default.php</filename>
+		<filename>views/watch/tmpl/default.css</filename>
+		<filename>views/watch/tmpl/default.xml</filename>
+		
+		<filename>assets/player.swf</filename>
+		<filename>assets/swfobject.js</filename>
+	</files>
+	
+	<media folder="media" destination="com_facetedvideos" />
+	
+	<languages folder="site/lang">
+		<language tag="pt-BR">pt-BR.com_facetedvideos.ini</language>
+		<language tag="en-GB">en-GB.com_facetedvideos.ini</language>
+	</languages>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">db.install.sql</file>
+			<file charset="utf8" driver="mysql">db.sample.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">db.uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<params>
+		<param name="videodir" default="com_facetedvideos" />
+		<param name="width" default="400" />
+		<param name="height" default="300" />
+	</params>
+
+	<administration>
+		
+		<menu>Faceted Videos</menu>
+		
+		<submenu>
+			<!--<menu>Control Panel</menu>-->
+			<menu controller="facettypes">Facet Types</menu>
+			<menu controller="facetobjects">Facets</menu>
+			<menu controller="mediaobjects">Videos</menu>
+		</submenu>
+
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>facetedvideos.php</filename>
+			<filename>config.xml</filename>
+			
+			<filename>db.install.sql</filename>
+			<filename>db.uninstall.sql</filename>
+			<filename>db.sample.sql</filename>
+			
+			<filename>controller.php</filename>
+			<filename>controllers/index.html</filename>
+			<filename>controllers/facettypes.php</filename>
+			<filename>controllers/facetobjects.php</filename>
+			<filename>controllers/mediaobjects.php</filename>
+			
+			<filename>views/index.html</filename>
+
+			<filename>views/facetedvideos/index.html</filename>
+			<filename>views/facetedvideos/view.html.php</filename>
+			<filename>views/facetedvideos/tmpl/index.html</filename>
+			<filename>views/facetedvideos/tmpl/default.php</filename>
+			
+			<filename>views/facettypes/index.html</filename>
+			<filename>views/facettypes/view.html.php</filename>
+			<filename>views/facettypes/tmpl/index.html</filename>
+			<filename>views/facettypes/tmpl/default.php</filename>
+			
+			<filename>views/facetobjects/index.html</filename>
+			<filename>views/facetobjects/view.html.php</filename>
+			<filename>views/facetobjects/tmpl/index.html</filename>
+			<filename>views/facetobjects/tmpl/default.php</filename>
+			
+			<filename>views/mediaobjects/index.html</filename>
+			<filename>views/mediaobjects/view.html.php</filename>
+			<filename>views/mediaobjects/tmpl/index.html</filename>
+			<filename>views/mediaobjects/tmpl/default.php</filename>
+			
+			<filename>views/facettypesform/index.html</filename>
+			<filename>views/facettypesform/view.html.php</filename>
+			<filename>views/facettypesform/tmpl/index.html</filename>
+			<filename>views/facettypesform/tmpl/default.php</filename>
+			
+			<filename>views/facetobjectsform/index.html</filename>
+			<filename>views/facetobjectsform/view.html.php</filename>
+			<filename>views/facetobjectsform/tmpl/index.html</filename>
+			<filename>views/facetobjectsform/tmpl/default.php</filename>
+			
+			<filename>views/mediaobjectsform/index.html</filename>
+			<filename>views/mediaobjectsform/view.html.php</filename>
+			<filename>views/mediaobjectsform/tmpl/index.html</filename>
+			<filename>views/mediaobjectsform/tmpl/default.php</filename>
+		</files>
+
+		<languages folder="admin/lang">
+			<language tag="pt-BR">pt-BR.com_facetedvideos.ini</language>
+			<language tag="en-GB">en-GB.com_facetedvideos.ini</language>
+		</languages>
+
+	</administration>
+</install>

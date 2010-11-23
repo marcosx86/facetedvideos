@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>jQuery Framework Adaptor</name>
+	<author>Marcos Cunha</author>
+	<creationDate>2010-04-24</creationDate>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>marcos21xx@gmail.com</authorEmail>
+	<authorUrl>http://m21xx.net</authorUrl>
+	<version>1.3</version>
+	<description>Deploys the jQuery Framework into the HEAD section of the output page.</description>
+	<files>
+		<filename plugin="jqueryadaptor">jqueryadaptor.php</filename>
+		<filename>jqueryadaptor/jquery-1.3.2.min.js</filename>
+		<filename>jqueryadaptor/jquery-1.4.2.min.js</filename>
+	</files>
+	<params>
+		<param name="version" type="radio" default="132" label="jQuery Version" description="">
+			<option value="132">1.3.2</option>
+			<option value="142">1.4.2</option>
+		</param>
+		<param name="compatmode" type="radio" default="1" label="Put Mootools compat. code" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>

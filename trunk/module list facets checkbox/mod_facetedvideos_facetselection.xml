@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Faceted Videos - Facet Selection Module</name>
+	
+	<author>Marcos Cunha</author>
+	<version>1.0</version>
+	<description>A module that shows the registered facets as checboxes, grouped by types.</description>
+	
+	<files>
+		<filename>mod_facetedvideos_facetselection.xml</filename>
+		<filename module="mod_facetedvideos_facetselection">mod_facetedvideos_facetselection.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/default.css</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_facetedvideos_facetselection.ini</language>
+		<language tag="pt-BR">pt-BR.mod_facetedvideos_facetselection.ini</language>
+	</languages>
+	
+	<params>
+	</params>
+</install>

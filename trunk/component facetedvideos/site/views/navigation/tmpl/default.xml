@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Navigation Layout">
+		<message>
+			Default navigation layout.
+		</message>
+	</layout>
+	<state>
+		<name>Navigation Layout</name>
+		<description>Default navigation layout.</description>
+		<params>
+			<param name="showcustomcolumns" type="radio" default="1" label="Show custom columns" description="">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="showselectedfacets" type="radio" default="0" label="Show selected facets" description="">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+		</params>
+	</state>
+</metadata>
