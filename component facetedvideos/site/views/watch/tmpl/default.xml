@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Player Layout" hidden="true">
+		<message>
+			Shows the JW Video Player, with the selected video.
+		</message>
+	</layout>
+	<state>
+		<name>Player Layout</name>
+		<description>Shows the JW Video Player, with the selected video.</description>
+		<params>
+		</params>
+	</state>
+</metadata>

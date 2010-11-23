@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="videodir" type="text" default="com_facetedvideos" label="Video Directory" description="" />
+		<param name="width" type="text" default="400" title="Player Width" description="" />
+		<param name="height" type="text" default="300" title="Player Height" description="" />
+	</params>
+</config>

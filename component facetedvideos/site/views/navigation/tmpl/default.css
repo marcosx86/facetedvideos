@@ -1,0 +1,11 @@
+div.videolist table
+{
+	width:100%;
+}
+
+div.videolist table th,
+div.videolist table td
+{
+	padding: 3px 5px;
+	border-bottom:1px gray solid;
+}
