@@ -1,0 +1,1 @@
+Proof of concept about the use of MPEG-7 associated with facets to navigate thru the content.
